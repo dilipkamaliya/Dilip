@@ -1,0 +1,398 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_slider_fWa4iL": {
+      "type": "Collection-Slider",
+      "blocks": {
+        "collection_Bzyf7G": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-t-shirt.jpg",
+            "custom_title": "T-shirts",
+            "link": ""
+          }
+        },
+        "collection_GKghhF": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-longsleeve-t-shirt.jpg",
+            "custom_title": "T-shirts Longsleeve",
+            "link": ""
+          }
+        },
+        "collection_KzW88c": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-hooded-tech-suit.jpg",
+            "custom_title": "Tech Suits",
+            "link": ""
+          }
+        },
+        "collection_8h4hjM": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-dynamic-tech-vest.jpg",
+            "custom_title": "Vests",
+            "link": ""
+          }
+        },
+        "collection_yCiHb9": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-urban-tech-pants.jpg",
+            "custom_title": "Pants",
+            "link": ""
+          }
+        },
+        "collection_LHMBUc": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-tech-gilet.jpg",
+            "custom_title": "Tech Gilets",
+            "link": ""
+          }
+        },
+        "collection_qQ7waT": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-hooded-blend-jacket.jpg",
+            "custom_title": "Jackets",
+            "link": ""
+          }
+        },
+        "collection_WFUKQG": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-bodywarmer.jpg",
+            "custom_title": "Bodywarmers",
+            "link": ""
+          }
+        },
+        "collection_BLwKQF": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-formal-shirt.jpg",
+            "custom_title": "Formal Shirts",
+            "link": ""
+          }
+        },
+        "collection_DXgKFL": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-polo-shirt.jpg",
+            "custom_title": "Polo Shirts",
+            "link": ""
+          }
+        },
+        "collection_mdiGAY": {
+          "type": "collection",
+          "settings": {
+            "collection": "automated-collection",
+            "custom_image": "shopify://shop_images/onyx-black-tech-shorts.jpg",
+            "custom_title": "Tech Shorts",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_Bzyf7G",
+        "collection_GKghhF",
+        "collection_KzW88c",
+        "collection_8h4hjM",
+        "collection_yCiHb9",
+        "collection_LHMBUc",
+        "collection_qQ7waT",
+        "collection_WFUKQG",
+        "collection_BLwKQF",
+        "collection_DXgKFL",
+        "collection_mdiGAY"
+      ],
+      "name": "Collection Slider",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_kTtbYW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tQeVqE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_rDAwzf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Xcqiwn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tQeVqE",
+        "text_rDAwzf",
+        "button_Xcqiwn"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_custom_mjKANT": {
+      "type": "image-text-custom",
+      "name": "Image Text Custom",
+      "settings": {
+        "color_scheme": "",
+        "text_align": "left",
+        "image": "shopify://shop_images/theme_cover_image.jpg",
+        "heading": "Heading Dilip Kamaliya",
+        "description": "<p>Crafting a captivating job description can help you attract highly qualified candidates for your job opening. A strong job description will make your position stand out from millions of opportunities on other employment websites.</p>",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_slider_pkhmG6": {
+      "type": "custom-slider",
+      "blocks": {
+        "image_slider_T3gph3": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_kJzzBY": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_NmVpai": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_FYcwgH": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_xB9ebD": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_bYnzLg": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        },
+        "image_slider_6tYEmT": {
+          "type": "image_slider",
+          "settings": {
+            "static_image": "shopify://shop_images/theme_cover_image.jpg",
+            "hover_image": "shopify://shop_images/fujiphilm-CxP2O8TRGIs-unsplash.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_T3gph3",
+        "image_slider_kJzzBY",
+        "image_slider_NmVpai",
+        "image_slider_FYcwgH",
+        "image_slider_xB9ebD",
+        "image_slider_bYnzLg",
+        "image_slider_6tYEmT"
+      ],
+      "disabled": true,
+      "name": "Custom Slider",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "icon_with_text_rJmQbV": {
+      "type": "icon-with-text",
+      "blocks": {
+        "item_qpwtnB": {
+          "type": "item",
+          "settings": {
+            "icon": "check_mark",
+            "image": "shopify://shop_images/onyx-black-formal-shirt.jpg",
+            "heading": "Fast delivery",
+            "text": "<p>Share a benefit or feature in a short sentence.</p>"
+          }
+        },
+        "item_XfN7ty": {
+          "type": "item",
+          "settings": {
+            "icon": "check_mark",
+            "image": "shopify://shop_images/onyx-black-tech-gilet.jpg",
+            "heading": "Fast delivery",
+            "text": "<p>Share a benefit or feature in a short sentence.</p>"
+          }
+        },
+        "item_PpWmDL": {
+          "type": "item",
+          "settings": {
+            "icon": "check_mark",
+            "image": "shopify://shop_images/onyx-black-t-shirt.jpg",
+            "heading": "Fast delivery",
+            "text": "<p>Share a benefit or feature in a short sentence.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_qpwtnB",
+        "item_XfN7ty",
+        "item_PpWmDL"
+      ],
+      "name": "Icon with text",
+      "settings": {
+        "title": "Why shoppers love us",
+        "heading_size": "h0",
+        "text": "<p>Add a short intro to explain the benefits of your offer.</p>",
+        "layout": "horizontal",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "grid_gap": 24,
+        "card_padding": 20,
+        "card_radius": 40,
+        "icon_wrapper_size": 54,
+        "icon_size": 62,
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "collection_slider_fWa4iL",
+    "image_banner",
+    "featured_collection",
+    "image_with_text_kTtbYW",
+    "image_text_custom_mjKANT",
+    "custom_slider_pkhmG6",
+    "icon_with_text_rJmQbV"
+  ]
+}

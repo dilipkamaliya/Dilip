@@ -1,0 +1,47 @@
+.swiper-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+img.slide-hover-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1.2s;
+    opacity: 0.5;
+}
+.swiper-backface-hidden .swiper-slide.swiper-slide-active img.slide-default-image{
+    opacity: 1;    
+    animation: minuse 3s ease-in-out infinite;
+}
+.swiper-backface-hidden .swiper-slide.swiper-slide-active img.slide-hover-image{
+    opacity: 1;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity:0;
+    transform: rotate3d(1, 1, 1, 0) scale(0) !important;
+  }
+  50% {
+    opacity:1;
+    transform: rotate3d(1, 1, 1, 45deg) scale(1.2) !important;
+  }
+}
+@keyframes minuse {
+  0%,
+  100% {
+    opacity:1;
+    transform: rotate3d(1, 1, 1, 45deg) scale(1.2) !important;
+  }
+  50% {
+    opacity:0;
+    transform: rotate3d(1, 1, 1, 0) scale(0) !important;
+    
+  }
+}

@@ -1,0 +1,304 @@
+{{ 'section-Collection-Slider.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+
+<!-- In your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- Before your closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+
+
+
+  .chc-section {
+    padding: 40px 0;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .chc-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .chc-swiper-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .chc-swiper .swiper-slide {
+    width: 179px; /* Fixed width as seen in your structure */
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .chc-section .chc-swiper .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      align-items: flex-start;
+      cursor: pointer;
+  }
+
+  .chc-section .container .swiper-horizontal {
+      padding-bottom: 18px;
+      margin-bottom: 2px;
+  }
+
+  .chc-media {
+      position: relative;
+      width: 60%;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 0 !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      box-sizing: content-box !important;
+  }
+
+  .chc-section .chc-media {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+      background: #f0f0f0;
+  }
+
+  .chc-section .chc-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+  }
+  .chc-media img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain;
+      display: block;
+  }
+
+  /* Hover effect */
+
+  .chc-section .chc-title {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21.45px;
+      color: #000;
+      text-align: center;
+      width: 100%;
+      display: block;
+  }
+  /* Container for the scrollbar */
+  .swiper-scrollbar {
+    height: 3px !important;
+    background: #ebebeb !important;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  /* The actual draggable handle */
+  .swiper-scrollbar-drag {
+    background: #000 !important;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  /* 1. Scrollbar Track */
+  .swiper-scrollbar {
+    height: 3px !important;
+    background: #ebebeb !important;
+    margin-top: 20px !important;
+    border-radius: 0 !important;
+    position: relative;
+  }
+
+  /* 2. The Draggable Handle */
+  .swiper-scrollbar-drag {
+    background: #000 !important;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0 !important;
+    display:block !important;
+  }
+
+  /* 3. Ensure it reacts to mouse interaction */
+  .swiper-scrollbar-drag:hover {
+    background: #333 !important;
+  }
+  .chc-section .container .swiper-scrollbar {
+      width: 10%!important;
+      bottom: 0!important;
+      left: 50%!important;
+      transform: translate(-50%);
+      border-radius: 0;
+      background: #d5d5d5;
+      height: 2px!important;
+  }
+
+  @media screen and (max-width: 1023px) {
+      .chc-section .container .swiper-scrollbar {
+          width: 25% !important;
+      }
+
+      .chc-section .chc-media {
+        height: 120px;
+      }
+  }
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    <section class="chc-section">
+      <div class="container">
+        <div class="swiper chc-swiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              {%- assign collection = collections[block.settings.collection] -%}
+
+              {% comment %} Condition: Use custom image if uploaded, otherwise use collection image {% endcomment %}
+              {%- assign display_image = block.settings.custom_image | default: collection.featured_image -%}
+              {%- assign display_title = block.settings.custom_title | default: collection.title -%}
+
+              <a href="{{ block.settings.link | default: collection.url }}" class="swiper-slide">
+                <div class="chc-media">
+                  <img
+                    src="{{ display_image | img_url: '600x600', crop: 'center' }}"
+                    alt="{{ display_title | escape }}"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="chc-title">{{ display_title }}</div>
+              </a>
+            {% endfor %}
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+const swiper = new Swiper('.chc-swiper', {
+  slidesPerView: 'auto', // Default for desktop
+  spaceBetween: 32,
+  freeMode: {
+    enabled: true,
+    sticky: false,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+  breakpoints: {
+    // When window width is >= 320px (Mobile)
+    320: {
+      slidesPerView: 3.2, // This forces 3.2 visible slides
+      spaceBetween: 10,
+    },
+    // When window width is >= 768px (Tablet/Desktop)
+    768: {
+      slidesPerView: 'auto', // Returns to auto-width for larger screens
+      spaceBetween: 32,
+    }
+  },
+});
+</script>
+
+{% schema %}
+{
+  "name": "Collection Slider",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection Item",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image (Optional Override)"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Title (Optional Override)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Custom Link (Optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider"
+    }
+  ]
+}
+{% endschema %}

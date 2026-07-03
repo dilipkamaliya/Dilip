@@ -1,0 +1,22 @@
+.image-cover img {
+    width: 100%;
+    height: auto;
+}
+
+.image-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-column-left {
+    width: 50%;
+}
+
+.content-column-right {
+    width: calc(50% - 50px);
+}
+.image-text-wrapper.image-right {
+    flex-direction: row-reverse;
+}
+
